@@ -1,0 +1,11 @@
+* {
+  font-size: 62.5%;
+}
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.episode {
+  font-size: 2rem;
+}
