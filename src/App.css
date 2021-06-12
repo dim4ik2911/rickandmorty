@@ -1,17 +1,12 @@
 .App {
   min-height: 100vh;
-  background: linear-gradient(
-    0deg,
-    rgba(106, 57, 119, 1) 0%,
-    rgba(213, 199, 217, 1) 15%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(229, 246, 211, 1) 85%,
-    rgba(174, 226, 117, 1) 100%
+  background: radial-gradient(
+    circle,
+    rgba(174, 226, 117, 1) 0%,
+    rgba(246, 211, 255, 1) 67%
   );
-  color: rgba(106, 57, 119, 1);
+  color: #6a3977;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 4fr;
+  display: flex;
+  flex-direction: column;
 }

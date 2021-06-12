@@ -1,11 +1,44 @@
 * {
   font-size: 62.5%;
 }
-.episodes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.characters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
-.episode {
+.character {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 57, 119, 1) 30%,
+    rgba(174, 226, 117, 1) 100%
+  );
+  width: 30rem;
+  height: 40rem;
+  margin: 6rem 3rem;
+  border: 0.3rem solid #fff;
+  border-radius: 25px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0px 0px 40px 5px rgba(106, 57, 119, 0.75);
+}
+
+.image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+.characteristic {
+  text-align: center;
+}
+.name {
+  font-size: 3rem;
+}
+.status {
+  font-size: 2rem;
+}
+.species {
   font-size: 2rem;
 }

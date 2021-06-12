@@ -5,27 +5,27 @@ import Cards from "./component/Cards";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [episodes, setEpisodes] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
-  const getAllEpisodes = () => {
-    fetch("https://rickandmortyapi.com/api/episode")
+  const getAllCharacters = () => {
+    fetch("https://rickandmortyapi.com/api/character")
       .then((response) => {
         return response.json();
       })
       .then((jsonResponse) => {
         console.log(jsonResponse.results);
-        setEpisodes(jsonResponse.results);
+        setCharacters(jsonResponse.results);
       });
   };
 
   useEffect(() => {
-    getAllEpisodes();
+    getAllCharacters();
   }, []);
   return (
     <div className="App">
       <Header />
       <Search />
-      <Cards episodes={episodes} />
+      <Cards characters={characters} />
     </div>
   );
 }
