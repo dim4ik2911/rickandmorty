@@ -6,25 +6,23 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-
-  const getAllCharacters = () => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((response) => {
-        return response.json();
-      })
-      .then((jsonResponse) => {
-        console.log(jsonResponse.results);
-        setCharacters(jsonResponse.results);
-      });
-  };
+  const [find, letsFind] = useState("");
 
   useEffect(() => {
+    const getAllCharacters = () =>
+      fetch(`https://rickandmortyapi.com/api/character/?name=${find}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setCharacters(data.results);
+        });
+
     getAllCharacters();
-  }, []);
+  }, [find]);
+
   return (
     <div className="App">
       <Header />
-      <Search />
+      <Search setFind={(f) => letsFind(f)} />
       <Cards characters={characters} />
     </div>
   );

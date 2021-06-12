@@ -2,9 +2,10 @@
   font-size: 62.5%;
 }
 .characters {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .character {
   display: flex;
@@ -14,9 +15,9 @@
     rgba(106, 57, 119, 1) 30%,
     rgba(174, 226, 117, 1) 100%
   );
-  width: 30rem;
-  height: 40rem;
-  margin: 6rem 3rem;
+  width: 25rem;
+  height: 35rem;
+  margin: 0rem 3rem 12rem 3rem;
   border: 0.3rem solid #fff;
   border-radius: 25px;
   padding: 1rem;
@@ -25,8 +26,8 @@
 }
 
 .image {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 25px;
   margin: 0 auto;
 }
