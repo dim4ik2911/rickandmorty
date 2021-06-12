@@ -37,9 +37,27 @@
 .name {
   font-size: 3rem;
 }
-.status {
-  font-size: 2rem;
-}
+.status,
 .species {
   font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .character {
+    width: 35rem;
+    height: 45rem;
+    margin: 0rem 6rem 12rem 6rem;
+  }
+
+  .image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .status,
+  .species {
+    font-size: 2.5rem;
+  }
 }
