@@ -16,8 +16,8 @@
     rgba(174, 226, 117, 1) 100%
   );
   width: 25rem;
-  height: 35rem;
-  margin: 0rem 3rem 12rem 3rem;
+  height: 40rem;
+  margin: 6rem 3rem 12rem 3rem;
   border: 0.3rem solid #fff;
   border-radius: 25px;
   padding: 1rem;
@@ -33,6 +33,10 @@
 }
 .characteristic {
   text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .name {
   font-size: 3rem;
@@ -42,10 +46,14 @@
   font-size: 2rem;
 }
 
+.location {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
   .character {
     width: 35rem;
-    height: 45rem;
+    height: 50rem;
     margin: 0rem 6rem 12rem 6rem;
   }
 

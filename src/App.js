@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  const [find, letsFind] = useState("");
+  const [find, letsFind] = useState(" ");
 
   useEffect(() => {
     const getAllCharacters = () =>

@@ -14,7 +14,7 @@ const Cards = (props) => {
                 <h1 className={styles.name}>{e.name}</h1>
                 <h2 className={styles.status}>{e.status}</h2>
                 <h3 className={styles.species}>{e.species}</h3>
-                <h3 className={styles.species}>{e.location.name}</h3>
+                <h3 className={styles.location}>{e.location.name}</h3>
               </div>
             </div>
           );
