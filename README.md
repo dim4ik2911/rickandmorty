@@ -6,3 +6,7 @@
 
 
 
+<div align="center">
+<img align="center" src="https://user-images.githubusercontent.com/75121895/123848534-be936680-d90f-11eb-8ecc-3c4070641aa1.png" alt="rick and morty api">
+</div>
+
